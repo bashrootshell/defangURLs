@@ -19,6 +19,6 @@ with open(FILE) as input, open("defanged.txt", "w") as output:
 
     content = input.read()
     matchurl = findall(main_regex, content)
-    for url in matchurl:
+    for url in set(matchurl):
         [url := url.replace(a, b) for a, b in replace_pattern]
         print(url, file=output)
