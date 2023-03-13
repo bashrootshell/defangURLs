@@ -1,1 +1,1 @@
-# defangURLs
+# defangURLs - kinda self-explanatory
